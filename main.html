@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toolbox">
+        <div class="map_checker">
+          <input
+            type="radio"
+            class="basemap"
+            id="lightMap"
+            name="radio_buttom"
+          /><label for="light">lightMap</label>
+          <input
+            type="radio"
+            class="basemap"
+            id="grayMap"
+            name="radio_buttom"
+          /><label for="light">grayMap</label>
+          <button class="drowbtn">Drow</button>
+          <button class="measurbtn">Meature</button>
+          <select name="dropDwon" class="dropDwon">
+            <option value="Point">point</option>
+            <option value="LineString">line</option>
+            <option value="Polygon">polygon</option>
+          </select>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="searchbox"
+            placeholder="search"
+          />
+          <ul id="placeopetion"></ul>
+        </div>
+      </div>
+
+      <div id="map">
+        <div id="popup"></div>
+      </div>
+    </div>
+    <script src="scribt.js"></script>
+  </body>
+</html>
